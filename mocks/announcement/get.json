@@ -1,0 +1,25 @@
+{
+  "code": "200",
+  "message": "操作成功",
+  "detailMessage": null,
+  "data": {
+    "list": [
+      {
+        "id": 1,
+        "title": "5555",
+        "announcement": "test",
+        "date": "2019-09-09 12:00:00"
+      },
+      {
+        "id": 2,
+        "title": "1234",
+        "announcement": "test test 22222222222",
+        "date": "2019-09-09 12:00:00"
+      }
+    ],
+
+    "pagination": {
+      "total": 30
+    }
+  }
+}

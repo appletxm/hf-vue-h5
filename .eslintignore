@@ -1,0 +1,7 @@
+dist
+node_modules
+mocks
+config/*.js
+mock/*/*.*
+scripts/*.js
+src/assets/js/*.js
