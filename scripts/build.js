@@ -26,22 +26,22 @@ function build () {
 
       if (process.argv && process.argv[4] === 'current-branch') {
         spinner.stop()
-        console.log(chalk.magenta('*****************build for current branch success****************'))
+        console.log(chalk.magenta('***build for current branch success***'))
         return false
       }
 
-      distOperations.createTarFile(process.argv[3] || 'production').then((_) => {
-        spinner.stop()
-        process.stdout.write(stats.toString({
-            colors: true,
-            modules: false,
-            children: false,
-            chunks: false,
-            chunkModules: false
-          }) + '\n\n')
-        console.log(chalk.magenta('*****************build success****************'))
-        console.log(chalk.cyan(`build success : $tarName(${_.versionId})`))
-      })
+      // distOperations.createTarFile(process.argv[3] || 'production').then((_) => {
+      //   spinner.stop()
+      //   process.stdout.write(stats.toString({
+      //       colors: true,
+      //       modules: false,
+      //       children: false,
+      //       chunks: false,
+      //       chunkModules: false
+      //     }) + '\n\n')
+      //   console.log(chalk.magenta('*****************build success****************'))
+      //   console.log(chalk.cyan(`build success : $tarName(${_.versionId})`))
+      // })
     })
   })
 }

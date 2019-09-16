@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const tar = require('tar')
+// const tar = require('tar')
 const chalk = require('chalk')
 
 module.exports = {
@@ -43,9 +43,9 @@ module.exports = {
           throw new Error('npm run buildForProd failed, ' + error)
           process.exit(1)
         } else {
-          const reg = /\$tarName\(([^()]+)\)/g
-          const tarName = reg.exec(stdout)[1] + '.tar'
-          console.log(chalk.cyan(`\n Release success create tar name: \n ${tarName}`))
+          // const reg = /\$tarName\(([^()]+)\)/g
+          // const tarName = reg.exec(stdout)[1] + '.tar'
+          // console.log(chalk.cyan(`\n Release success create tar name: \n ${tarName}`))
           resolve(true)
         }
       })
