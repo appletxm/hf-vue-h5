@@ -13,7 +13,6 @@ sourcePath = path.join(__dirname, env.sourcePath)
 distPath = path.join(__dirname, env.distPath)
 
 console.info('***current env***', envKeyWord)
-console.info('sourcePath: ', sourcePath, 'distPath: ', distPath)
 
 webpackConfig = require('./webpack.config.base')(envKeyWord, env)
 webpackConfig['resolve']['alias']['env.cfg'] = webpackFn.getEnvCfg(envKeyWord)
