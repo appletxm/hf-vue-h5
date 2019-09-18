@@ -1,6 +1,6 @@
 {
   "name": "hf-vue-h5",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "dependencies": {
     "@babel/polyfill": "7.4.3",
