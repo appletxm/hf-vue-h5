@@ -39,6 +39,7 @@ releaseCodeOperations.switchBranch()
   })
   .then((res) => {
     spinner.stop()
+    console.log(chalk.cyan(`***Build succes.****`))
   })
   .catch((err) => {
     console.info(chalk.red(err))

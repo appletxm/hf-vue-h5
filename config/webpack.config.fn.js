@@ -18,7 +18,13 @@ module.exports = {
     } else if (envKeyWord === 'test') {
       envCfg = 'env-test'
     } else {
-      envCfg = 'env-production'
+      if ((process.argv)[3] && ((process.argv)[3] === 'test' || (process.argv)[4] === 'current-branch')) {
+        envCfg = 'env-test'
+      } else if ((process.argv)[3] && (process.argv)[3] === 'pre') {
+        envCfg = 'env-pre'
+      } else {
+        envCfg = 'env-production'
+      }
     }
 
     envFilePath = path.join(__dirname, './' + envCfg + '.js')
