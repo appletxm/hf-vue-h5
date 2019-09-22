@@ -1,4 +1,6 @@
-const { api } = require('env.cfg')
+let { api } = require('env.cfg')
+
+api = (window.appInfo && window.appInfo.api) || api
 
 export default {
   getAnnouncement: `${api}/announcement/get`,

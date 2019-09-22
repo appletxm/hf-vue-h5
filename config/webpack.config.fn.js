@@ -127,6 +127,11 @@ module.exports = {
         from: path.resolve(env.sourcePath + '/assets'),
         to: path.resolve(env.distPath + '/assets')
       }]),
+
+      new CopyPlugin([{
+        from: path.resolve('./cfg.js'),
+        to: path.resolve(env.distPath + '/js/cfg.js')
+      }]),
       
       new MiniCssExtractPlugin({
         filename: cssPath

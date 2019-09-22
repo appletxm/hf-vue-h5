@@ -17,6 +17,7 @@
 
 <body>
 	<div id="app" class="app"></div>
+	<script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath + 'js/cfg.js' %>" charset="utf-8"></script>
 	<% var jsFiles = htmlWebpackPlugin.options.libFiles.js %>
 	<% for (var index in jsFiles) { %>
 		<script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath + jsFiles[index] %>" charset="utf-8"></script>
